@@ -4,10 +4,8 @@ var startEl = document.querySelector(".start-page")
 // timer count down
 var secondsLeft = 75;
 var timerNum
-//question list-not show on the start page
 var questionsEl = document.querySelector("#questions");
 questionsEl.style.display = "none";
-//final score section hide
 var finalScore = document.querySelector("#score");
 finalScore.style.display = "none";
 
@@ -36,7 +34,7 @@ var questions = [
 ];
 
 
-// Click the start button; game start; timer start running
+// Click the start button, starts game, timer starts running
 function timeCount() {
     secondsLeft--;
     timerEl.textContent = secondsLeft;
@@ -68,11 +66,11 @@ var currentQuestion = questions[i];
 function showQuestions(){
 
     currentQuestion = questions[i]; 
-    // insert the question title in HTML 
+    // insert questions into the HTML 
     questionTitle.textContent = currentQuestion.title;
     // clear choice buttons each time
     choicesEl.innerHTML = "";
-    // defined each button, give them class, value and target them to decide the player's score
+    // defined each button, gave them class, value and target them to decide the player's score
     currentQuestion.choices.forEach(function(choice, k){
         var choices = document.createElement("button");   
         choices.setAttribute("class", "choice");
