@@ -1,0 +1,53 @@
+*{
+    font-family:sans-serif; 
+    font-size: 20px;
+}
+
+button{
+    font-size:20px;
+    color:white;
+    background-color:rgb(135, 46, 236);
+    border-style: none;
+    border-radius: 10px;
+    cursor: pointer;
+    padding:5px 15px;
+    margin: 10px;
+}
+/* Start page */
+.start-page{
+    text-align: center;
+}
+
+.start-page h1{
+    font-size:40px;
+}
+
+.start-page p{
+    margin: 25px 15vw;
+}
+
+.view-highscores{
+    color:rgb(135, 46, 236);
+    text-decoration: none;
+}
+
+.timer{
+    position:absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* View HighScores css */
+.high-scores{
+    margin-top: 10vh;
+    margin-left: 20vw;
+}
+.high-scores section h1{
+    font-size:40px;
+}
+
+/* choices style */
+.choice{
+    display:block;
+}
+
